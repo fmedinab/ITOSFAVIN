@@ -9,3 +9,9 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[scripts]
+  dev = "next dev"
+  build = "next build"
+  start = "next start"
+  export = "next build && next export"
