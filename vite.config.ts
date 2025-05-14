@@ -4,30 +4,24 @@ import { resolve } from 'path'
 export default defineConfig({
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
-        index: 'index.html',
-        categorias: 'categorias.html',
-        servicios: 'servicios.html',
-        tienda: 'tienda.html',
-        nosotros: 'nosotros.html',
-        contacto: 'contacto.html'
+        index: resolve(__dirname, 'index.html'),
+        categorias: resolve(__dirname, 'categorias.html'),
+        servicios: resolve(__dirname, 'servicios.html'),
+        tienda: resolve(__dirname, 'tienda.html'),
+        nosotros: resolve(__dirname, 'nosotros.html'),
+        contacto: resolve(__dirname, 'contacto.html')
       }
-    },
-    // Asegura que los assets se procesen correctamente
-    assetsDir: 'assets',
-    // Mejora el manejo de archivos estáticos
-    copyPublicDir: true
+    }
   },
   server: {
     open: true,
-    // Añade soporte para hot reload
     watch: {
       usePolling: true
     }
   },
-  // Asegura que las rutas sean correctas
   base: '/',
-  // Mejora el manejo de archivos estáticos
   publicDir: 'public'
 })
