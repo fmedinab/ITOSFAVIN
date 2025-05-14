@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explora nuestra tienda online de productos eléctricos ITOSFAVIN. Gran variedad de cables, iluminación, enchufes y herramientas eléctricas con los mejores precios en Lima, Perú." />
+  <meta name="keywords" content="tienda eléctrica, productos eléctricos, comprar cables, iluminación, herramientas eléctricas, Lima, Perú" />
+  <meta name="author" content="Frank Medina B." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Tienda | ITOSFAVIN" />
+  <meta property="og:description" content="Explora y compra productos eléctricos de alta calidad con los mejores precios en Lima, Perú." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://itositosfavin.com/tienda.html" />
+  <meta property="og:image" content="/src/assets/images/hero-bg.jpg" />
+  <link rel="canonical" href="https://itositosfavin.com/tienda.html" />
+  <title>Tienda | ITOSFAVIN</title>
+  <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="stylesheet" href="/src/css/components.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="/">ITOSFAVIN</a>
+        </div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/tienda.html">Tienda</a></li>
+            <li><a href="/categorias.html">Categorías</a></li>
+            <li><a href="/servicios.html">Servicios</a></li>
+            <li><a href="/nosotros.html">Nosotros</a></li>
+            <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="nav-actions">
+          <!-- Dark Mode Toggle -->
+          <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+          </label>
+          <button id="cart-btn" class="cart-btn">
+            <span class="cart-icon">🛒</span>
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+          <button id="menu-toggle" class="menu-toggle">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/tienda.html">Tienda</a></li>
+        <li><a href="/categorias.html">Categorías</a></li>
+        <li><a href="/servicios.html">Servicios</a></li>
+        <li><a href="/nosotros.html">Nosotros</a></li>
+        <li><a href="/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+      <div class="container">
+        <h1 class="page-title">Tienda de Productos Eléctricos</h1>
+        <p class="page-description">Explora nuestra amplia selección de productos de alta calidad para todas tus necesidades eléctricas.</p>
+      </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+      <div class="container">
+        <div class="shop-grid">
+          <aside class="shop-sidebar">
+            <div class="filter-section">
+              <h3>Filtrar por Categoría</h3>
+              <ul class="filter-list">
+                <li><a href="/categorias.html?cat=cables">Cables y Conductores</a></li>
+                <li><a href="/categorias.html?cat=iluminacion">Iluminación</a></li>
+                <li><a href="/categorias.html?cat=enchufes">Enchufes y Tomacorrientes</a></li>
+                <li><a href="/categorias.html?cat=herramientas">Herramientas Eléctricas</a></li>
+                <li><a href="/categorias.html?cat=tableros">Tableros y Accesorios</a></li>
+              </ul>
+            </div>
+          </aside>
+          <div class="shop-products">
+            <div class="products-grid" id="shop-products-container">
+              <!-- Products will be loaded dynamically with JavaScript -->
+              <div class="loading">Cargando productos...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>ITOSFAVIN</h3>
+            <p>Tu mejor opción en productos eléctricos</p>
+          </div>
+          <div class="footer-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/tienda.html">Tienda</a></li>
+              <li><a href="/categorias.html">Categorías</a></li>
+              <li><a href="/servicios.html">Servicios</a></li>
+              <li><a href="/nosotros.html">Nosotros</a></li>
+              <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contacto</h4>
+            <ul>
+              <li>📱 WhatsApp: <a href="https://wa.me/51912193198">912 193 198</a></li>
+              <li>📧 Email: ioporteitosfavinperu@gmail.com</li>
+              <li>🕒 Lunes a Sábado: 9:00 - 18:00</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ITOSFAVIN. Todos los derechos reservados.</p>
+          <p class="author-info">Diseñado y desarrollado por <a href="#" target="_blank">Frank Medina B.</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Carrito de Compras</h3>
+          <button id="close-cart" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div id="cart-items" class="cart-items">
+            <!-- Cart items will be loaded here -->
+          </div>
+          <div class="cart-summary">
+            <div class="cart-total">
+              <span>Total:</span>
+              <span id="cart-total">S/ 0.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="clear-cart" class="btn btn-secondary">Vaciar Carrito</button>
+          <button id="checkout-btn" class="btn btn-primary">Finalizar Pedido</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51912193198" class="whatsapp-float" target="_blank">
+      <span class="whatsapp-icon">💬</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+      <span class="back-to-top-icon">⬆️</span>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
